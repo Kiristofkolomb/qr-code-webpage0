@@ -18,6 +18,15 @@
             padding: 20px;
         }
 
+        video {
+            width: 100%;
+            height: auto;
+            border: none;
+            outline: none;
+            display: block;
+            margin: 0 auto;
+        }
+
         .content {
             position: absolute;
             bottom: 20px;
@@ -44,7 +53,7 @@
 <body>
     <div class="animation-container">
         <!-- Buraya animasyon kodunu ekle -->
-        <video width="320" height="240" controls>
+        <video autoplay muted playsinline onended="this.style.display='none';">
             <source src="Bir başlık ekleyin (1).mp4" type="video/mp4">
             Tarayıcınız video etiketini desteklemiyor.
         </video>
